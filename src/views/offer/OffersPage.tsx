@@ -11,6 +11,14 @@ const OffersPage: React.FC = () => {
 
     const [emails, setEmails] = useState<{ [key: string]: string }>({});
 
+    const handleButtonClick = (offer: Offer) => {
+        sendEmail(emails[offer.id], offer);
+        setEmails(prev => ({
+            ...prev,
+            [offer.id]: ''  // Clear the email for this specific offer
+        }));
+    };
+
     useEffect(() => {
         fetchOffers().then(data => {
             setOffers(data);
@@ -29,7 +37,7 @@ const OffersPage: React.FC = () => {
             <section className={styles.section}>
                 {offers.map(offer => (
                     <div key={offer.id} className={styles.offerContainer}>
-                        <OfferCard offer={offer} text="Send Email" onButtonClick={() => sendEmail(emails[offer.id], offer)} />
+                        <OfferCard offer={offer} text="Send Email" onButtonClick={() => handleButtonClick(offer)} />
                         <input
                             type="email"
                             placeholder="Enter your email"
