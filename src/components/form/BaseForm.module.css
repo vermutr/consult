@@ -1,0 +1,50 @@
+.form {
+    width: 23.125rem;
+    height: 15.5rem;
+    background-color: #898989;
+    border-radius: 2.5vh;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 12px 40px rgba(0, 0, 0, 0.05);
+}
+
+.headerText {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vh;;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    width: 18.125rem;
+    height: 1.5rem;
+    padding-top: 1rem;
+}
+
+.input {
+    width: 18.125rem;
+    height: 1.875rem;
+    border-radius: 1vh;
+    margin-left: 1.5rem;
+    margin-right: 2.5rem;
+    margin-top: 1rem;
+    border: none;
+    font-size: 1rem;
+    padding-left: 1rem;
+}
+
+.button {
+    width: 11.25rem;
+    height: 3.125rem;
+    border-radius: 2vh;
+    margin-top: 1rem;
+    margin-left: 5.9375rem;
+    margin-right: 5.9375rem;
+    border: none;
+    font-size: 1.3rem;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+.input::placeholder {
+    font-size: 1rem;
+    color: #aaa;
+}

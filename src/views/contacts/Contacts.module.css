@@ -1,0 +1,25 @@
+.container {
+    margin: 40px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #f6f6f6;
+    border-radius: 8px;
+}
+
+.header {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.item {
+    margin-bottom: 15px;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.content {
+    margin-left: 10px;
+}

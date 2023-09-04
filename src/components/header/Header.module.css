@@ -1,0 +1,80 @@
+    .header {
+        width: 100%;
+        height: 10%;
+        background-color: #DBDBDB;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 12vw;
+        height: 7.5vh;
+        margin-top: 3vh;
+        margin-bottom: 0.5vh;
+        margin-left: 3vw;
+    }
+
+    .buttonsContainer {
+        display: flex;
+        gap: 0.25vw;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .button {
+        width: 12.8vw;
+        height: 4.5vh;
+        background-color: #DBDBDB;
+        border: none;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 4vh;
+        color: #000000;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .button:hover {
+        transform: scale(1.1);
+    }
+
+    .button:active {
+        transform: scale(1.1);
+    }
+
+    .profile {
+        width: 2.8vw;
+        height: 5vh;
+        margin-right: 3vw;
+    }
+
+    .profile:hover {
+        transform: scale(1.1);
+    }
+
+    .profile:active {
+        transform: scale(0.9);
+    }
+
+    .logout {
+        width: 2.8vw;
+        height: 5vh;
+        margin-right: 3vw;
+    }
+
+    .logout:hover {
+        transform: scale(1.1);
+    }
+
+    .logout:active {
+        transform: scale(0.9);
+    }
+
+    .logo:hover {
+        transform: scale(1.1);
+    }
+
+    .logo:active {
+        transform: scale(0.9);
+    }

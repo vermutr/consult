@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import AuthView from "./views/auth/AuthView";
+import Header from "./components/header/Header";
+import {AuthProvider} from "./components/auth/AuthContext";
+import MainPage from "./views/mainpage/MainPage";
+import Contacts from "./views/contacts/Contacts";
+import About from "./views/about/About";
+import ProfilePage from "./views/profile/Profile";
+import OffersPage from "./views/offer/OffersPage";
+import React from "react";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <BrowserRouter>
+            <AuthProvider>
+                <Header/>
+                <Routes>
+                    <Route path="/" element={<MainPage/>}/>
+                    <Route path="/offers" element={<OffersPage/>}/>
+                    <Route path="/login" element={<AuthView/>}/>
+                    <Route path="/profile" element={<ProfilePage/>}/>
+                    <Route path="/contacts" element={<Contacts/>}/>
+                    <Route path="/about" element={<About/>}/>
+                </Routes>
+            </AuthProvider>
+        </BrowserRouter>
+    );
 }
 
 export default App;

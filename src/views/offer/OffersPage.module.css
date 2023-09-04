@@ -1,0 +1,27 @@
+.container {
+    text-align: -webkit-center;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 20px;
+    box-sizing: border-box;
+    max-height: 500px;
+}
+
+.offerContainer {
+    margin-bottom: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.emailInput {
+    display: block;
+    width: 50%;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}

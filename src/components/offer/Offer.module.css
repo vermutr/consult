@@ -1,0 +1,31 @@
+.offerCard {
+    background-color: #f7f7f7;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.offerCard button {
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover and active effects */
+    font-size: 16px; /* Adjust if needed */
+    outline: none; /* Hide the default focus outline. However, consider accessibility! */
+}
+
+.offerCard button:hover {
+    background-color: #357ab7; /* Slightly darker shade for the hover effect */
+}
+
+.offerCard button:active {
+    transform: scale(0.98); /* Slightly reduce the size when the button is pressed */
+}
+
+.offerCard button:focus {
+    box-shadow: 0 0 0 3px rgba(62,123,250, 0.5); /* Custom focus ring */
+}
